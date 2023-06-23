@@ -1,0 +1,57 @@
+<form action="" id="vnos" [formGroup]="vnos" (ngSubmit)="dataSave()" formvalidate>
+    <div class="card">
+        <h1>Obrazec</h1>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <label for="ime">Ime</label>
+            </td>
+            <td>
+                <input type="text" name="ime" id="ime" formControlName="ime">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="priimek">Priimek</label>
+            </td>
+            <td>
+                <input type="text" name="priimek" id="priimek" formControlName="priimek">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="naslov">Naslov</label>
+            </td>
+            <td>
+                <input type="text" name="naslov" id="naslov" formControlName="naslov">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="opis">Opis</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <textarea name="opis" id="opis" rows="10" style="width: 100%;" formControlName="opis"></textarea>
+            </td>
+        </tr>
+    </table>
+    <div class="center">
+        <input type="submit" value="Pošlji" [disabled]="!vnos.valid">
+    </div>
+</form>
+
+<div id="potrditev">
+    <div class="card">
+        <h2 style="text-align: center;">Podatki so bili uspešno oddani</h2>
+    </div>
+    <div class="center">
+        <button (click)="novVnos()">Nova oddaja</button>
+    </div>
+</div>
+
+<div class="center" id="prijava">
+    <a href="/login">Prijava</a>
+</div>

@@ -1,0 +1,36 @@
+form td{
+    text-align: right;
+}
+
+.center {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+input[type=text] {
+    max-width: 175px;
+}
+
+input[type=submit] {
+    margin-top: 10px;
+}
+
+.card {
+    border-radius: 4px;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+    height: 40px;
+    border: none;
+    width: 260px;
+    margin: 0 8px 16px;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 24px;
+}
+
+#prijava {
+    margin-top: 20px;
+}

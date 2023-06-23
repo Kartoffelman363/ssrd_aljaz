@@ -42,7 +42,7 @@ export class GostComponent {
       'priimek': this.vnos.controls.priimek.value,
       'naslov': this.vnos.controls.naslov.value,
       'opis': this.vnos.controls.opis.value,
-      'ocena': undefined
+      'ocena': null
     });
 
     console.log(dela.length);

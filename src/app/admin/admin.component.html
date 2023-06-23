@@ -1,1 +1,130 @@
-<p>AdmIN</p>
+<h1>Ocenjevanje</h1>
+
+<table>
+    <div class="blok" id="blok1">
+        <tr>
+            <td>Ime: {{el[0].ime}}</td>
+            <td>Priimek: {{el[0].priimek}}</td>
+            <td>Naslov: {{el[0].naslov}}</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Opis:
+                <br>
+                {{el[0].opis}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form action="" [formGroup]="ocenaGroup1" (ngSubmit)="shraniOceno1()">
+                    <label for="ocena1">Ocena</label>
+                    <input type="number" min="1" max="5" id="ocena1" name="ocena1" formControlName="ocena">
+                    <input type="submit" value="Oceni" [disabled]="!ocenaGroup1.valid" id="submit1" >
+                </form>
+            </td>
+        </tr>
+    </div>
+
+    <div class="blok" id="blok2">
+        <tr>
+            <td>Ime: {{el[1].ime}}</td>
+            <td>Priimek: {{el[1].priimek}}</td>
+            <td>Naslov: {{el[1].naslov}}</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Opis:
+                <br>
+                {{el[1].opis}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form action="" [formGroup]="ocenaGroup2"  (ngSubmit)="shraniOceno2()">
+                    <label for="ocena2">Ocena</label>
+                    <input type="number" min="1" max="5" id="ocena2" name="ocena2" formControlName="ocena" >
+                    <input type="submit" value="Oceni" [disabled]="!ocenaGroup2.valid" id="submit2">
+                </form>
+            </td>
+        </tr>
+    </div>
+
+    <div class="blok" id="blok3">
+        <tr>
+            <td>Ime: {{el[2].ime}}</td>
+            <td>Priimek: {{el[2].priimek}}</td>
+            <td>Naslov: {{el[2].naslov}}</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Opis:
+                <br>
+                {{el[2].opis}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form action="" [formGroup]="ocenaGroup3" (ngSubmit)="shraniOceno3()">
+                    <label for="ocena3">Ocena</label>
+                    <input type="number" min="1" max="5" id="ocena3" name="ocena3" formControlName="ocena">
+                    <input type="submit" value="Oceni" [disabled]="!ocenaGroup3.valid" id="submit3">
+                </form>
+            </td>
+        </tr>
+    </div>
+
+    <div class="blok" id="blok4">
+        <tr>
+            <td>Ime: {{el[3].ime}}</td>
+            <td>Priimek: {{el[3].priimek}}</td>
+            <td>Naslov: {{el[3].naslov}}</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Opis:
+                <br>
+                {{el[3].opis}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form action="" [formGroup]="ocenaGroup4" (ngSubmit)="shraniOceno4()">
+                    <label for="ocena4">Ocena</label>
+                    <input type="number" min="1" max="5" id="ocena4" name="ocena4" formControlName="ocena" >
+                    <input type="submit" value="Oceni" [disabled]="!ocenaGroup4.valid" id="submit4">
+                </form>
+            </td>
+        </tr>
+    </div>
+
+    <div class="blok" id="blok5">
+        <tr>
+            <td>Ime: {{el[4].ime}}</td>
+            <td>Priimek: {{el[4].priimek}}</td>
+            <td>Naslov: {{el[4].naslov}}</td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                Opis:
+                <br>
+                {{el[4].opis}}
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <form action="" [formGroup]="ocenaGroup5" (ngSubmit)="shraniOceno5()">
+                    <label for="ocena5">Ocena</label>
+                    <input type="number" min="1" max="5" id="ocena5" name="ocena5" formControlName="ocena" >
+                    <input type="submit" value="Oceni" [disabled]="!ocenaGroup5.valid" id="submit5">
+                </form>
+            </td>
+        </tr>
+    </div>
+
+    <div class="center">
+        <button (click)="posodobi(-1)">Prejšnja</button>
+        <button (click)="posodobi(1)">Naslednja</button>
+    </div>
+    
+
+</table>

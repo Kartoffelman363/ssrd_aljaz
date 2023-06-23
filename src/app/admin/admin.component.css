@@ -1,0 +1,27 @@
+.blok {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: lightblue;
+    width: fit-content;
+    width: 600px;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.center {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+button{
+    margin: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type=number]{
+    text-align: right;
+    padding: 4px;
+}
